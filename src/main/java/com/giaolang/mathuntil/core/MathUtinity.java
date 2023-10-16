@@ -23,7 +23,7 @@ public class MathUtinity {
         if(n==0 || n==1)
             return 1;
         
-        long result = 1;// bien tich luy, gom nhieu viec nhan ,bien con heo dat
+        long result = 10;// bien tich luy, gom nhieu viec nhan ,bien con heo dat
                          // acc accumulation
                          
         // song den for 
