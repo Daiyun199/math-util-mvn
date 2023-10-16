@@ -20,7 +20,7 @@ jobs:                                  # THì làm những việc dưới đây
     - name: Set up JDK 20              #3. Cài JDK trên server vừa mượn 
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: '20'
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven           #4. mượn maven và chạy lệnh huyền thoại mvn package
