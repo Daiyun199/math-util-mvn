@@ -16,14 +16,14 @@ jobs:                                  # THì làm những việc dưới đây
     runs-on: ubuntu-latest             #1 Mượn cái server bên Mỹ, Cài OS Ubuntutu
 
     steps:
-    - uses: actions/checkout@v3        2.# Download code về cái server vừa mượn
-    - name: Set up JDK 20              3.# Cài JDK trên server vừa mượn 
+    - uses: actions/checkout@v3        #2. Download code về cái server vừa mượn
+    - name: Set up JDK 20              #3. Cài JDK trên server vừa mượn 
       uses: actions/setup-java@v3
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven           4.# mượn maven và chạy lệnh huyền thoại mvn package
+    - name: Build with Maven           #4. mượn maven và chạy lệnh huyền thoại mvn package
       run: mvn -B package --file pom.xml
 
   
